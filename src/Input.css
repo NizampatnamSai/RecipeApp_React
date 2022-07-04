@@ -1,0 +1,20 @@
+.Input_input {
+    width: 90%;
+    /* 1120 */
+    max-width: 255px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 20px;
+    /* margin-bottom: 5px; */
+}
+
+.input_btn {
+    background-color: lightgreen;
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+
+}
+button:hover {
+    cursor: pointer;
+}
