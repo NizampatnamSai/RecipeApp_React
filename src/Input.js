@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import {useDispatch, useSelector} from 'react-redux'
 // import { displayName } from 'react-spinkit';
@@ -57,6 +57,15 @@ function Input({mode}) {
     
     
    }
+
+  //  useEffect(()=>{
+  //   axios.get(`https://api.edamam.com/search?q=${req}&app_id=${API_ID}&app_key=${API_KEY}`).then((data)=>{
+  //     setList(data.data)
+  //     console.log(data)
+  // }).catch((e)=>console.log(e.message))
+
+
+  //  },[req])
 
    let onCanelclk=()=>{
     // alert('are you sure!')
