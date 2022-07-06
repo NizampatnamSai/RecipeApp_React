@@ -1,74 +1,49 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectReciepe } from './features/counterSlice'
+import { selectReciepe } from './features/RecipeSlice'
 import './ReduxInput.css'
 import './RecipeData.css'
+import RecipeData from './RecipeData'
 
 
 function ReduxInput() {
     let reciperedux=useSelector(selectReciepe)
-    let label,calories,healthLabels,digest,num,image;
 
-    reciperedux.map((data)=>{return( <>
-    
-
-     {/* CHecking purpose  */}
-         
-         
-           label=  {data.recipe.label} calories={data.recipe.calories} 
-        healthLabels={data.recipe.healthLabels}  digest={data.recipe.digest} image={data.recipe.image}
-        num={data.recipe.yield} 
-        </> )})
-
-
-
-
-
-
-
-
-    let len=0;
+    console.log(reciperedux)
+    console.log(reciperedux.data)
     
     
-    return (
-      <div className='Input_recipedata'>
-        <div className='recipedata'>
-          <div className='recipedata_top'>
-         <img className='recipedata_img' src={image} alt='recipe img'/>
-       <div>
-        <p> <b> {label}</b> </p>
-         {healthLabels} </div>
-         </div>
-         <div className='recipedata_bottom'>
-          <div className='calories'><b>{num}</b> servings  <br/>
-          <b> {Math.floor(calories)}</b> Kcal</div>
-  
-        <div className='digest'>  {digest?.map((data)=>{ return( <> 
-  
-              { len<5 &&  ++len &&   <ul className='digest_ui'>
-                  <li>{data.label}</li>
-                  <li> <b>{Math.floor(data.total)} g</b> </li>
-              </ul>  } </>
-          )
-  
-          })}
-          </div>
-  
-         </div>
+    
+    return ( <>
+      
+
+  {reciperedux && reciperedux.data.map((data)=>{return(
+        <div className='inpt_Recipe' key={data.recipe.calories}> 
+
+        
+             
+             <RecipeData   label=  {data.recipe.label} calories={data.recipe.calories} 
+            healthLabels={data.recipe.healthLabels}  digest={data.recipe.digest} image={data.recipe.image}
+            num={data.recipe.yield}
+            />
+             
+
         </div>
-      </div>
+    )
+    })
+      } 
+
+
+  
+      
+</>   
+    
     )
 }
 
 export default ReduxInput
 
-// function RecipeData({label,calories,healthLabels,digest,num,image}) {
-    //     let [list,setList]=useState([])
-    
-    
-    //    useEffect(()=>{
-    
-    //    },[])
+
     
    
     

@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counterSlice';
+import reciepeReducer from '../features/RecipeSlice';
 
 export const store = configureStore({
   reducer: {
-    data: counterReducer,
+    data: reciepeReducer,
+    modes: reciepeReducer,
+    users: reciepeReducer,
   },
 });

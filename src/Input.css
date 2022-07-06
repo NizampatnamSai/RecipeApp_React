@@ -2,11 +2,90 @@
     width: 90%;
     /* 1120 */
     max-width: 255px;
-    border-radius: 3px;
+    border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 20px;
-    /* margin-bottom: 5px; */
+    
 }
+
+
+
+.App_inputWht {
+    /* background-color: aqua; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 4px 4px white; */
+  border-radius: 5px;
+  min-height: 450px;
+    
+}
+
+
+
+.App_inputBlk {
+    /* background-color: aqua; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  /* box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 0px 4px 4px white;
+  border-radius: 5px;
+  min-height: 450px;
+    
+}
+
+
+@media (max-width: 1300px){
+    .App_inputWht{
+        width: 65%;
+    
+        }
+    .App_inputBlk{
+            width: 65%;
+        
+            }
+
+}
+
+@media (max-width: 1150px){
+    .App_inputWht{
+        width: 70%;
+    
+        }
+    .App_inputBlk{
+            width: 70%;
+        
+            }
+
+}
+
+
+
+
+@media (max-width: 350px) {
+    .App_inputWht{
+        width: 90%;
+    
+        }.App_inputBlk{
+            width: 90%;
+        
+            }
+
+}
+
+@media (max-width: 250px) {
+    .App_inputWht{
+        width: 100%;
+    
+        }.App_inputBlk{
+            width: 100%;
+        
+            }
+
+}
+
 
 .input_btn {
     background-color: lightgreen;
@@ -17,4 +96,94 @@
 }
 button:hover {
     cursor: pointer;
+}
+
+/* .signoutimg {
+    width: 25px;
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+} */
+
+.signoutimg {
+    width: 25px;
+    position: relative;
+    bottom: 25px;
+    border-radius: 50%;
+left: 50%;
+}
+
+@media (max-width: 920px) and (min-width:700px){
+    .signoutimg{
+        position: relative;
+        top: 10px;
+        }
+   
+
+}
+
+
+
+@media (max-width: 750px){
+    .signoutimg{
+        position: relative;
+        bottom: 23px;
+        }
+   
+
+}
+
+@media (max-width: 600px) and (min-width:500px){
+    .signoutimg{
+        position: relative;
+        top: 8px;
+        }
+   
+
+}
+
+
+
+
+
+
+/* @media (max-width: 750px ){
+    .signoutimg{
+        position: relative !important;
+    bottom: 10px !important;
+        }
+   
+
+} */
+
+
+
+
+
+
+
+img:hover {
+    cursor: pointer;
+}
+
+.csncel_btn {
+    background-color: red;
+    border: none;
+    height: 25px;
+   border-radius: 5px;
+}
+
+.signout_show {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    visibility: hidden;
+    position: relative;
+    left: 45%;
+    bottom: 50px;
+}
+
+
+.signout_pop:hover .signout_show {
+   visibility: visible;
 }
