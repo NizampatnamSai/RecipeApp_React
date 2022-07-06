@@ -7,6 +7,8 @@ import './Input.css'
 import RecipeData from './RecipeData';
 import ReduxInput from './ReduxInput';
 
+
+
 function Input() {
     let [list,setList]=useState([]);
     let [req, setReq]=useState('')
