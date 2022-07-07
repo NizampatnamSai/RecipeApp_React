@@ -98,6 +98,9 @@ flex-direction: column;
     /* padding-bottom: 1px; */
     border-radius: 10px;
     /* margin-bottom: 15px; */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
 }
 
 .calories {
@@ -107,12 +110,14 @@ flex-direction: column;
 }
 
 .digest1 {
-    flex: 1;
+    flex: 0.9;
     flex-flow: wrap-reverse;
+    /* padding-right: ; */
 }
 .digest2 {
     flex: 1;
     flex-flow: wrap-reverse;
+    margin-right: 5px;
 }
 
 .digest_ui {
@@ -121,3 +126,9 @@ flex-direction: column;
     justify-content: space-between;
 }
 
+/* .recipe_label {
+    display: flex;
+    flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    /* width: 55%;
+} */

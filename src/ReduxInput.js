@@ -1,23 +1,25 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectReciepe } from './features/RecipeSlice'
+// import { selectReciepe } from './features/RecipeSlice'
 import './ReduxInput.css'
 import './RecipeData.css'
 import RecipeData from './RecipeData'
+import { selectThunkRcipe } from './features/RecipeThunkSlice'
 
 
 function ReduxInput() {
-    let reciperedux=useSelector(selectReciepe)
-
-    console.log(reciperedux)
-    console.log(reciperedux.data)
+    // let reciperedux=useSelector(selectReciepe)
+    let selectRcipe=useSelector(selectThunkRcipe)
+    
+    // console.log(reciperedux)
+    // console.log(reciperedux.data)
     
     
     
     return ( <>
       
 
-  {reciperedux && reciperedux.data.map((data)=>{return(
+  {selectRcipe && selectRcipe?.hits?.map((data)=>{return(
         <div className='inpt_Recipe' key={data.recipe.calories}> 
 
         

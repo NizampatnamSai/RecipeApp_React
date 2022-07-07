@@ -13,7 +13,7 @@ let len2=0;
       <div className='recipedata'>
         <div className='recipedata_top'>
        <img className='recipedata_img' src={image} alt='recipe img'/>
-     <div>
+     <div className='recipe_label'>
       <p> <b> {label}</b> </p>
        {healthLabels} </div>
        </div>

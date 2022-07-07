@@ -1,0 +1,27 @@
+.thunk_inp {
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategray;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 250px;
+    margin-top: 10px;
+    box-shadow: 0px  0px 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.thunk_inp input {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+
+.recipe_labels {
+    /* justify-content: center; */
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+}
