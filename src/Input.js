@@ -9,7 +9,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import {useDispatch, useSelector} from 'react-redux'
 
 
-import { getrecipe, selectSTatus, selectThunkRcipe } from './features/RecipeThunkSlice';
+import { eraceRecipe, getrecipe, selectSTatus, selectThunkRcipe } from './features/RecipeThunkSlice';
 import { auth } from './Firebase';
 import Spinner from 'react-spinkit'
 
@@ -151,6 +151,7 @@ function Input({mode}) {
 
    let onSignup=()=>{
     auth.signOut()
+    dispatch(eraceRecipe())
    }
 
 
@@ -199,6 +200,7 @@ function Input({mode}) {
       } */}
       
                     {selectRcipe? <ReduxInput/>:null}
+                    
                     { loadng ? <div className='loading_app'>
         <div  className='loading_spin'>
        

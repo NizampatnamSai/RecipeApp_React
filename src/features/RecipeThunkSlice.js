@@ -22,26 +22,15 @@ export const RecipeThunkSLice = createSlice({
     status:null,
     
   },
-//   reducers: {
-//     reciepee: (state,action) => {
-    
-//       state.reciepe= action.payload;
-//     },
-//     mod: (state,action) => {
-//       state.mode =action.payload;
-//     },
-//     eraceRecipe: (state, action) => {
+  reducers: {
 
-//       state.reciepe= null;
+    eraceRecipe: (state, action) => {
 
-//     },
-//     user:(state,action)=>{
-//    state.login=action.payload;
-//     },
-//     logout:(state,action)=>{
-//       state.login=null;
-//     }
-//   },
+      state.reciepe= null;
+
+    },
+
+  },
 
 
   extraReducers:{
@@ -63,7 +52,7 @@ export const RecipeThunkSLice = createSlice({
  
 });
 
-// export const { reciepe, status } = RecipeThunkSLice.actions;
+export const { eraceRecipe } = RecipeThunkSLice.actions;
 
 // export const selectReciepe = (state) => state.data.reciepe;
 // export const selectMode = (state) => state.modes.mode;
